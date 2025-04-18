@@ -49156,6 +49156,7 @@ function _b4(_Xb, _Yb) {
     _3g(global._2g, 2, 0, 0 ? 1 : 0);
     _3g(global._2g, 2, 2, 5);
     _3g(global._2g, 2, 3, "Floor is Ceiling");
+    _3g(global._2g, 2, 4, "When toggled on, the floor teleports#players to the ceiling.")
     _3g(global._2g, 4, 0, 1 ? 1 : 0);
     _3g(global._2g, 4, 3, "Speedy when Shielded");
     _3g(global._2g, 4, 4, "When toggled on, shielded players are faster.");
@@ -49164,11 +49165,11 @@ function _b4(_Xb, _Yb) {
     _3g(global._2g, 5, 4, "When toggled on, whoever is \"It\" is faster.");
     _3g(global._2g, 6, 0, 0 ? 1 : 0);
     _3g(global._2g, 6, 3, "Keyboard Spacing");
-    _3g(global._2g, 6, 4, "When toggled on, it configures special keybinds.#The setting changes TFGH to YGHJ and IJKL to PL;'");
+    _3g(global._2g, 6, 4, "When toggled on, it configures special keybinds.#The setting changes:#TFGH to YGHJ and IJKL to PL;'");
     _3g(global._2g, 7, 0, 10);
     _3g(global._2g, 7, 2, 2);
     _3g(global._2g, 7, 3, "Master Volume");
-    _3g(global._2g, 7, 4, "The original devs didn't set a description in the game code.#Just a blank string. Weird.#Changes both your music and sound volume.");
+    _3g(global._2g, 7, 4, "The original devs didn't set a description#in the game code.#Just a blank string.#Weird.#Changes both your music and sound volume.");
     if (global._4g > 0.5) {
         {
             _3g(global._2g, 8, 0, 0);
@@ -55909,8 +55910,8 @@ function _V7(_Xb, _Yb) {
                         _Sh = floor((_sf._tf / 6));
                         _rd = (_sf._tf / 2);
                         _sd = (_sf._sg + _Xb._3s - 8);
-                        _w4(_Xb, _Yb, (_rd - _Sh), _sd, "^_#to Select", 2, 16777215, 1, 2, 1);
-                        _w4(_Xb, _Yb, (_rd + _Sh), _sd, "[Space]#to Confirm", 2, 16777215, 1, 2, 1);
+                        _w4(_Xb, _Yb, (_rd - _Sh), _sd, "^_#to confirm", 2, 16777215, 1, 2, 1);
+                        _w4(_Xb, _Yb, (_rd + _Sh), _sd, "[Space]#to confirm", 2, 16777215, 1, 2, 1);
                     }
                 };
                 _w4(_Xb, _Yb, 2, 2, "v0.9.1", 1, 0, 0, 0, 0);
@@ -114558,117 +114559,7 @@ function _E43(_nE) {
     return _9A2
 };
 
-function _A43() {
-    var _Bt2 = _IP._kb._Vb;
-    var _fc1 = (_M33 / 1000) - _IP._kb._Vb;
-    if ((_83._kb._H43 != undefined) && (_83._kb._H43)) try {
-        var _I43 = "{";
-        var _J43 = _dT(_B43());
-        _I43 += "\"mID\" : \"";
-        _I43 += _J43;
-        _I43 += "\", ";
-        if (_83._kb._Qb != undefined) {
-            var _K43 = "";
-            for (var _m6 = 0; _m6 < 16; _m6++) _K43 += _83._kb._Qb[_m6].toString(16);
-            _I43 += "\"mUS\" : \"";
-            _I43 += _K43;
-            _I43 += "\", "
-        }
-        if (_83._kb._ub != undefined) {
-            _I43 += "\"mGM\" : \"";
-            _I43 += _83._kb._ub;
-            _I43 += "\", "
-        }
-        if (_83._kb._Rb != undefined) {
-            _I43 += "\"gN\" : \"";
-            _I43 += _83._kb._Rb;
-            _I43 += "\", "
-        }
-        if ((_83._kb._L43 != undefined) && (_83._kb._M43 != undefined) && (_83._kb._N43 != undefined)) {
-            _I43 += "\"gV\" : \"";
-            _I43 += _83._kb._L43 + "." + _83._kb._M43 + "." + _83._kb._N43 + ".0";
-            _I43 += "\", ";
-        }
-        _I43 += "\"osT\" : \"";
-        _I43 += "19";
-        _I43 += "\", ";
-        _I43 += "\"osV\" : \"";
-        _I43 += _mZ.browser;
-        _I43 += "\", ";
-        var _O43 = navigator.language;
-        var _sv = _O43.split("-");
-        _I43 += "\"osL\" : \"";
-        _I43 += _sv[0];
-        _I43 += "\", ";
-        _I43 += "\"osR\" : \"";
-        _I43 += _sv[1];
-        _I43 += "\", ";
-        if (navigator.userAgent) {
-            _I43 += "\"navUsrA\" : \"";
-            _I43 += navigator.userAgent;
-            _I43 += "\", "
-        }
-        if (navigator.vendor) {
-            _I43 += "\"navVend\" : \"";
-            _I43 += navigator.vendor;
-            _I43 += "\", "
-        }
-        if (navigator.platform) {
-            _I43 += "\"navPlat\" : \"";
-            _I43 += navigator.vendor;
-            _I43 += "\", "
-        }
-        if (navigator.cpuClass) {
-            _I43 += "\"navCpuC\" : \"";
-            _I43 += navigator.cpuClass;
-            _I43 += "\", "
-        }
-        if (window.devicePixelRatio) {
-            _I43 += "\"winPixR\" : \"";
-            _I43 += window.devicePixelRatio;
-            _I43 += "\", "
-        }
-        _I43 += "\"win\" : \"";
-        _I43 += _6D2() + "," + _7D2();
-        _I43 += "\", ";
-        var _FU1 = 0;
-        var _P43 = _1U();
-        for (var _m6 = 0; _m6 < _P43; _m6++, _FU1 <<= 1) {
-            if (_2U(_m6)) _FU1 |= 1
-        }
-        _I43 += "\"gpad\" : \"";
-        _I43 += _P43 + "," + _FU1 + ",";
-        for (var _m6 = 0; _m6 < _P43; _m6++) {
-            if (_2U(_m6)) _I43 += "(" + _3U(_m6) + "," + _4U(_m6) + "),"
-        }
-        _I43 += "\" ";
-        _I43 += "}";
-        var _Q43 = undefined;
-        try {
-            _Q43 = new TextEncoder("utf-8")
-        } catch (e) {};
-        var _WW1;
-        if (_Q43 != undefined) {
-            _WW1 = _Q43._R43(_I43)
-        } else _WW1 = _E43(_I43);
-        var _S43 = new Zlib.Deflate(_WW1);
-        var _T43 = _S43.compress();
-        var _U43 = _D43(_T43);
-        var buffer = _YS(_U43);
-        var _V43 = _dT("MILES" + buffer + "JAMIE");
-        var _Qa1 = "https://ping.yoyogames.com/pingback?data=";
-        var _W43 = encodeURIComponent(buffer);
-        _Qa1 += _W43;
-        _Qa1 += "&validate=";
-        var _HT = 0;
-        for (var _m6 = _Rf2(12); _HT < 2 && _m6 < 16; ++_m6, ++_HT) {
-            _Qa1 += _V43.charAt(_m6 * 2) + _V43.charAt(_m6 * 2 + 1)
-        }
-        _uZ(_Qa1);
-    } catch (e) {
-        debug("Failed to submit stats: " + e)
-    }
-}
+function _A43() {// removed fingerprinting garbage}
 
 function _X43() {
     _AC(canvas, _BC);
