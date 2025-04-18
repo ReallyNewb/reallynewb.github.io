@@ -49165,11 +49165,11 @@ function _b4(_Xb, _Yb) {
     _3g(global._2g, 5, 4, "When toggled on, whoever is \"It\" is faster.");
     _3g(global._2g, 6, 0, 0 ? 1 : 0);
     _3g(global._2g, 6, 3, "Keyboard Spacing");
-    _3g(global._2g, 6, 4, "When toggled on, it configures special keybinds.#The setting changes:#TFGH to YGHJ and IJKL to PL;'");
+    _3g(global._2g, 6, 4, "When toggled on, it configures#special keybinds.The setting changes:#TFGH to YGHJ and IJKL to PL;'");
     _3g(global._2g, 7, 0, 10);
     _3g(global._2g, 7, 2, 2);
     _3g(global._2g, 7, 3, "Master Volume");
-    _3g(global._2g, 7, 4, "The original devs didn't set a description#in the game code.#Just a blank string.#Weird.#Changes both your music and sound volume.");
+    _3g(global._2g, 7, 4, "The original devs didn't set a description#in the game code.##It was just a blank string.#Weird.#Changes both your music and sound volume.");
     if (global._4g > 0.5) {
         {
             _3g(global._2g, 8, 0, 0);
@@ -114559,7 +114559,11 @@ function _E43(_nE) {
     return _9A2
 };
 
-function _A43() {// removed fingerprinting garbage}
+function _A43() {
+/* 
+removed fingerprinting garbage 
+*/
+}
 
 function _X43() {
     _AC(canvas, _BC);
