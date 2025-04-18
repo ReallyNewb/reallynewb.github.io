@@ -49169,7 +49169,7 @@ function _b4(_Xb, _Yb) {
     _3g(global._2g, 7, 0, 10);
     _3g(global._2g, 7, 2, 2);
     _3g(global._2g, 7, 3, "Master Volume");
-    _3g(global._2g, 7, 4, "The original devs didn't set a description#in the game code.##It was just a blank string.#Weird.#Changes both your music and sound volume.");
+    _3g(global._2g, 7, 4, "The original devs didn't set a description#in the game code.##It was just a blank string.#Weird.##Changes both your music and sound volume.");
     if (global._4g > 0.5) {
         {
             _3g(global._2g, 8, 0, 0);
@@ -62771,23 +62771,7 @@ function _DQ() {
     })
 }
 
-function _FQ(response) {
-    try {
-        var text = JSON.stringify(response);
-        debug("facebook login response:");
-        debug(text)
-    } catch (e) {}
-    if (response.status === 'connected') {
-        _CQ = response.authResponse.userID;
-        g_fbOAuthToken = response.authResponse.accessToken;
-        _GQ = _xQ;
-        _DQ()
-    } else if (response.status === 'not_authorized') {
-        _GQ = 'DENIED'
-    } else {
-        _GQ = _yQ
-    }
-}
+function _FQ(response) {}
 var _HQ = {
     appId: 0,
     status: !0,
@@ -62807,59 +62791,16 @@ function _IQ() {
     }
 }
 
-function _MQ(_8G) {
-    var _NQ, id = 'facebook-jssdk',
-        _OQ = _8G.getElementsByTagName('script')[0];
-    if (_8G.getElementById(id)) {
-        return
-    }
-    _NQ = _8G.createElement('script');
-    _NQ.id = id;
-    _NQ._PQ = true;
-    _NQ.src = "//connect.facebook.net/en_US/sdk.js";
-    _OQ.parentNode.insertBefore(_NQ, _OQ)
-}
+function _MQ(_8G) {}
 
-function _QQ(_RQ) {
-    var _Ht = document.getElementById(_RP);
-    var _SP = _Ht.parentNode;
-    var _TP = document.createElement("div");
-    _TP.setAttribute("id", "fb-root");
-    _SP.insertBefore(_TP, _Ht.nextSibling);
-    g_fbAppId = _RQ;
-    window.fbAsyncInit = _IQ;
-    _MQ(document)
-}
+function _QQ(_RQ) {}
 
 function _SQ(data) {
     _CQ = data.id;
     _GQ = 'AUTHORISED'
 }
 
-function _TQ(_UQ) {
-    if (typeof(FB) == 'undefined') {
-        console.log("Facebook initialisation has not completed");
-        return
-    }
-    _GQ = _wQ;
-    var _HP = 0;
-    var _VQ = '';
-    if (_UQ >= 0) {
-        _HP = _4e(_UQ);
-        for (var _m6 = 0; _m6 < _HP; _m6++) {
-            var _nE = _5e(_UQ, _m6);
-            _VQ += _nE;
-            if (_m6 < _HP - 1) {
-                _VQ += ','
-            }
-        }
-        FB.login(_FQ, {
-            scope: _VQ
-        })
-    } else {
-        FB.login(_FQ)
-    }
-}
+function _TQ(_UQ) {}
 var _WQ = -1;
 
 function _XQ(_YQ, _ZQ, __Q, _0R) {
