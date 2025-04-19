@@ -49195,7 +49195,7 @@ function _b4(_Xb, _Yb) {
     _3g(global._2g, 0, 0, 1);
     _3g(global._2g, 0, 2, 4);
     _3g(global._2g, 0, 3, "Game Length");
-    _3g(global._2g, 0, 4, "ww")
+    _3g(global._2g, 0, 4, "Changes how long one game lasts.##Each game mode *may be*#inconsistent with the selected#length.")
     _1g = 0;
     while ((_1g < 10)) {
         {
@@ -53386,6 +53386,7 @@ function _s5(_Xb, _Yb, _Zb) {
     _Xb.__h = 0;
     switch (_Xb._0i) {
         case (-1):
+        case 5:
             /*
             Sneaky sneaky..
             Looks like we found some bots.
@@ -53429,17 +53430,10 @@ function _s5(_Xb, _Yb, _Zb) {
             _Xb._Ah = "Pixie";
             _Xb._Bh = "Purple";
             break;
-        case 5:
+        case 99:
             _Xb._Zh = 42;
             _Xb._Ah = "Kraken";
             _Xb._Bh = "Teal";
-            break;
-        case 6:
-            // The bot code was written by ReallyNewb, me.
-            // Let's see if this works..
-            _Xb._Zh = 43;
-            _Xb._Ah = "CPU";
-            _Xb._Bh = "Silver";
             break;
     };
 }
