@@ -49588,6 +49588,10 @@ function _f4(_Xb, _Yb) {
 }
 
 function _g4(_Xb, _Yb) {
+    /*
+    This appears to be round handling code.
+    - ReallyNewb, 4/19/2025 @ 9:02 a.m. okay dude we dont need to know
+    */
     var _ih, _jh, _kh, _lh, _nh, _oh, _ph, _qh, _rh;
     _ph = _l4(_Xb, _Yb);
     _kh = (3 * _P4(_Xb, _Yb));
@@ -53386,7 +53390,6 @@ function _s5(_Xb, _Yb, _Zb) {
     _Xb.__h = 0;
     switch (_Xb._0i) {
         case (-1):
-        case 5:
             /*
             Sneaky sneaky..
             Looks like we found some bots.
@@ -53430,7 +53433,7 @@ function _s5(_Xb, _Yb, _Zb) {
             _Xb._Ah = "Pixie";
             _Xb._Bh = "Purple";
             break;
-        case 99:
+        case 5:
             _Xb._Zh = 42;
             _Xb._Ah = "Kraken";
             _Xb._Bh = "Teal";
