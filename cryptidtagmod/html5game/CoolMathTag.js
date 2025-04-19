@@ -49153,16 +49153,17 @@ function _b4(_Xb, _Yb) {
     _3g(global._2g, 1, 0, 0 ? 1 : 0);
     _3g(global._2g, 1, 2, 5);
     _3g(global._2g, 1, 3, "No Walls");
+    _3g(global._2g, 1, 4, "When toggled on, walls teleport players#to the parallel side.")
     _3g(global._2g, 2, 0, 0 ? 1 : 0);
     _3g(global._2g, 2, 2, 5);
     _3g(global._2g, 2, 3, "Floor is Ceiling");
-    _3g(global._2g, 2, 4, "When toggled on, the floor teleports#players to the ceiling.")
+    _3g(global._2g, 2, 4, "When toggled on, the floor teleports#players to the ceiling.");
     _3g(global._2g, 4, 0, 1 ? 1 : 0);
     _3g(global._2g, 4, 3, "Speedy when Shielded");
-    _3g(global._2g, 4, 4, "When toggled on, shielded players are faster.");
+    _3g(global._2g, 4, 4, "When toggled on, shielded players#are faster.");
     _3g(global._2g, 5, 0, 1 ? 1 : 0);
     _3g(global._2g, 5, 3, "Speedy when \"It\"");
-    _3g(global._2g, 5, 4, "When toggled on, whoever is \"It\" is faster.");
+    _3g(global._2g, 5, 4, "When toggled on, whoever is \"It\"#is faster.");
     _3g(global._2g, 6, 0, 0 ? 1 : 0);
     _3g(global._2g, 6, 3, "Keyboard Spacing");
     _3g(global._2g, 6, 4, "When toggled on, it configures#special keybinds.The setting changes:#TFGH to YGHJ and IJKL to PL;'");
@@ -49194,6 +49195,7 @@ function _b4(_Xb, _Yb) {
     _3g(global._2g, 0, 0, 1);
     _3g(global._2g, 0, 2, 4);
     _3g(global._2g, 0, 3, "Game Length");
+    _3g(global._2g, 0, 4, "ww")
     _1g = 0;
     while ((_1g < 10)) {
         {
@@ -53384,6 +53386,12 @@ function _s5(_Xb, _Yb, _Zb) {
     _Xb.__h = 0;
     switch (_Xb._0i) {
         case (-1):
+            /*
+            Sneaky sneaky..
+            Looks like we found some bots.
+
+            - ReallyNewb, 4/19/2025 @ 8:42 a.m. wow
+            */
             if ((_Xb._uo == 60)) {
                 {
                     _Xb._Zh = 44;
@@ -53425,6 +53433,13 @@ function _s5(_Xb, _Yb, _Zb) {
             _Xb._Zh = 42;
             _Xb._Ah = "Kraken";
             _Xb._Bh = "Teal";
+            break;
+        case 6:
+            // The bot code was written by ReallyNewb, me.
+            // Let's see if this works..
+            _Xb._Zh = 43;
+            _Xb._Ah = "CPU";
+            _Xb._Bh = "Silver";
             break;
     };
 }
@@ -69469,17 +69484,7 @@ var _4i1 = _XQ;
 var _5i1 = _5R;
 var _6i1 = _7i1;
 
-function _7i1() {
-    debug("facebook_logout");
-    FB.logout(function(response) {
-        if (response.status != 'connected') {
-            _GQ = _vQ;
-            _CQ = "";
-            g_fbOAuthToken = ""
-        }
-    });
-    return 0;
-}
+function _7i1() {return 0;}
 var _8i1 = _Do;
 
 function _Do(_9i1, _a01) {
