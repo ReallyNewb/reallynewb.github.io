@@ -52792,6 +52792,8 @@ function _g5(_Xb, _Yb) {
 }
 
 function _h5(_Xb, _Yb, _Zb, __b, _0c) {
+    // This seems to handle bots.
+    // ReallyNewb, 5/10/2025 @ 4:14 p.m.
     if ((((_Xb._zh >= 1)) && ((global._xh >= 2)))) {
         {
             var _yh;
@@ -52809,6 +52811,9 @@ function _h5(_Xb, _Yb, _Zb, __b, _0c) {
                 case 4:
                     _yh = "D";
                     break;
+                default:
+                    _yh = "Extra CPU";
+
             };
             _v4(_Xb, _Yb, _Zb, __b, _yh, _0c, _5k((((_Xb._zh - 1) * 64) + 12), 255, 255));
         }
