@@ -50468,8 +50468,8 @@ function _B4(_Xb, _Yb) {
     };
 
     // Infinite bot support.
-    if (global._xh >= 4 && (_Xb._Dj == 1 && _Xb._Ej == 0)) global._xh++;
-    else if(global._xh > 0 && (_Xb.Ej == 1 && _Xb._Dj == 0)) global._xh--;
+    if (global._xh >= 4 && _Xb._Dj == 1) global._xh++;
+    else if(global._xh > 0 && _Xb.Ej == 1) global._xh--;
 
     _Xb._Ij = "Add bots with >#Remove bots with <";
 }
