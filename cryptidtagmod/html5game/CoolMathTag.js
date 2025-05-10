@@ -50433,32 +50433,33 @@ function _A4(_Xb, _Yb) {
 }
 
 function _B4(_Xb, _Yb) {
-    var addBots = true;
-
-    console.log(`${_Xb._Dj}, ${_Xb._Ej}, ${_Xb.Kj}, ${_Xb.Fj}`);
+    // DJ property of _Xb seems to be if the user pressed left (numbered boolean)
+    // EJ property of _Xb seems to be if the user pressed right (numbered boolean)
+    var simulated_xh = global._xh;
+    //console.log(`${_Xb._Dj}, ${_Xb._Ej}, ${_Xb.Kj}, ${_Xb.Fj}`);
 
     if (_Xb._Dj > 0.5) {
         {
             var addBots = false;
-            global._xh -= 1;
+            simulated_xh--;
             _M5(_Xb, _Yb, 24);
         }
     } else {
         if (_Xb._Ej > 0.5) {
             {
-                global._xh += 1;
+                simulated_xh++;
                 _N5(_Xb, _Yb, 24);
             }
         } else {
             if (_Xb._Kj > 0.5) {
                 {
-                    _Xb._Gj -= 1;
+                    _Xb._Gj--;
                     _M5(_Xb, _Yb, 24);
                 }
             } else {
                 if (((_Xb._Fj > 0.5) || (_z5(_Xb, _Yb) > 0.5))) {
                     {
-                        _Xb._Gj += 1;
+                        _Xb._Gj++;
                         _N5(_Xb, _Yb, 24);
                     }
                 }
@@ -50466,16 +50467,9 @@ function _B4(_Xb, _Yb) {
         }
     };
 
-    global._xh = _xg(global._xh, _C4(_Xb, _Yb), _Xb._Hj);
-
     // Infinite bot support.
-    if ((global._xh >= 4) && addBots) {
-        global._xh++;
-    } else {
-        if ((global._xh >= 0) && !addBots) {
-            global._xh--;
-        }
-    }
+    if (global._xh >= 4 && (_Xb._Dj == 1 && _Xb._Ej == 0)) global._xh++;
+    else if(global._xh > 0 && (_Xb.Ej == 1 && _Xb._Dj == 0)) global._xh--;
 
     _Xb._Ij = "Add bots with >#Remove bots with <";
 }
@@ -62797,25 +62791,13 @@ var _HQ = {
     version: 'v2.8'
 };
 
-function _IQ() {
-    _HQ.appId = g_fbAppId;
-    FB.init(_HQ);
-    FB._JQ._KQ();
-    FB.getLoginStatus(_FQ);
-    FB.Canvas.setAutoGrow(100);
-    if (_IP._kb && _IP._kb._lb && _IP._kb._LQ) {
-        _IP._kb._LQ()
-    }
-}
+function _IQ() {}
 
 function _MQ(_8G) {}
 
 function _QQ(_RQ) {}
 
-function _SQ(data) {
-    _CQ = data.id;
-    _GQ = 'AUTHORISED'
-}
+function _SQ(data) {}
 
 function _TQ(_UQ) {}
 var _WQ = -1;
@@ -62837,16 +62819,7 @@ function _XQ(_YQ, _ZQ, __Q, _0R) {
     FB.api(_YQ, _ZQ, _1R, _3R)
 }
 
-function _3R(data) {
-    if (_WQ != -1) {
-        _4R(data, _WQ);
-        try {
-            var text = JSON.stringify(data);
-            _vt(_WQ, "response_text", text)
-        } catch (e) {}
-    }
-    debug("response received from facebook_graph_request")
-}
+function _3R(data) {}
 
 function _5R(_YQ, __Q, _0R) {
     var _1R = {};
@@ -62868,16 +62841,8 @@ function _5R(_YQ, __Q, _0R) {
     return 1
 }
 
-function _6R(data, _7R) {
-    if (_7R != -1) {
-        _4R(data, _7R)
-    }
-    debug("response received from facebook_dialog:");
-    try {
-        var text = JSON.stringify(data);
-        debug(text)
-    } catch (e) {}
-} /*@constructor */
+function _6R(data, _7R) {} 
+/*@constructor */
 function _8R() {
     this._9R = "";
     this._aR = 0;
@@ -66554,10 +66519,11 @@ function _Hd(_iu) {
     return _vD
 }
 
-function _xg(_vO, _W41, _X41) {
-    if (_vO < _W41) _vO = _W41;
-    else if (_vO > _X41) _vO = _X41;
-    return _vO
+function _xg(check, comp1, comp2) {
+    // This function seems to be a combination of both Math.max and Math.min.
+    if (check < comp1) check = comp1;
+    else if (check > comp2) check = comp2;
+    return check
 }
 
 function _8c(_Y41, _Z41, __U) {
