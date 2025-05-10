@@ -50435,6 +50435,8 @@ function _A4(_Xb, _Yb) {
 function _B4(_Xb, _Yb) {
     var addBots = true;
 
+    console.log(`${_Xb._Dj}, ${_Xb._Ej}, ${_Xb.Kj}, ${_Xb.Fj}`);
+
     if (_Xb._Dj > 0.5) {
         {
             var addBots = false;
@@ -50467,11 +50469,11 @@ function _B4(_Xb, _Yb) {
     global._xh = _xg(global._xh, _C4(_Xb, _Yb), _Xb._Hj);
 
     // Infinite bot support.
-    if ((global._xh >= 4) && addBots == true) {
-        global._xh += 1;
+    if ((global._xh >= 4) && addBots) {
+        global._xh++;
     } else {
         if ((global._xh >= 0) && !addBots) {
-            global._xh -= 1;
+            global._xh--;
         }
     }
 
@@ -52808,27 +52810,11 @@ function _g5(_Xb, _Yb) {
 function _h5(_Xb, _Yb, _Zb, __b, _0c) {
     // This seems to handle bots.
     // ReallyNewb, 5/10/2025 @ 4:14 p.m.
+
+    // Modified so that _yh (bot identifier) is the bot's exact place order.
     if ((((_Xb._zh >= 1)) && ((global._xh >= 2)))) {
         {
-            var _yh;
-            _yh = "Z";
-            switch (_Xb._zh) {
-                case 1:
-                    _yh = "A";
-                    break;
-                case 2:
-                    _yh = "B";
-                    break;
-                case 3:
-                    _yh = "C";
-                    break;
-                case 4:
-                    _yh = "D";
-                    break;
-                default:
-                    _yh = "Extra CPU";
-
-            };
+            var _yh = String(_Xb._zh);
             _v4(_Xb, _Yb, _Zb, __b, _yh, _0c, _5k((((_Xb._zh - 1) * 64) + 12), 255, 255));
         }
     };
