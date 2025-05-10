@@ -49166,7 +49166,7 @@ function _b4(_Xb, _Yb) {
     _3g(global._2g, 5, 4, "When toggled on, whoever is \"It\"#is faster.");
     _3g(global._2g, 6, 0, 0 ? 1 : 0);
     _3g(global._2g, 6, 3, "Keyboard Spacing");
-    _3g(global._2g, 6, 4, "When toggled on, it configures#special keybinds.The setting changes:#TFGH to YGHJ and IJKL to PL;'");
+    _3g(global._2g, 6, 4, "When toggled on, it configures#special keybinds. The setting changes:#TFGH to YGHJ and IJKL to PL;'");
     _3g(global._2g, 7, 0, 10);
     _3g(global._2g, 7, 2, 2);
     _3g(global._2g, 7, 3, "Master Volume");
@@ -50695,6 +50695,7 @@ function _E4(_Xb, _Yb) {
     };
     _v4(_Xb, _Yb, _Qj, _Rj,
         "Bots", _kh, _Tj);
+    console.log(`${_Xb} | ${_Yb} | ${_Qj} | ${_Rj} | ${_kh} | ${_Tj}`);
     _Rj += (45 * _kh);
     _Rj -= 14;
     if ((global._xh == 0)) {
