@@ -50562,10 +50562,10 @@ function _E4(_Xb, _Yb) {
     for (var __j = 0, _0k = ~~(4); __j < _0k; __j++) {
         {
             switch (_Uj) {
-                case 5:
+                case 2:
                     _Sj = "Hot#Potato";
                     break;
-                case 2:
+                case 5:
                     _Sj = "Reverse#Tag";
                     break;
                 case 6:
@@ -50703,7 +50703,6 @@ function _E4(_Xb, _Yb) {
         }
     } else {
         {
-            console.log(`${_Xb._Gj}, ${_Wj}`);
             if ((_Xb._Gj < 4)) {
                 {
                     _Wj = 1;
