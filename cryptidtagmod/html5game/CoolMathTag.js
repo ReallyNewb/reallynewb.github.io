@@ -50695,7 +50695,6 @@ function _E4(_Xb, _Yb) {
     };
     _v4(_Xb, _Yb, _Qj, _Rj,
         "Bots", _kh, _Tj);
-    console.log(`${_Xb} | ${_Yb} | ${_Qj} | ${_Rj} | ${_kh} | ${_Tj}`);
     _Rj += (45 * _kh);
     _Rj -= 14;
     if ((global._xh == 0)) {
@@ -50704,6 +50703,7 @@ function _E4(_Xb, _Yb) {
         }
     } else {
         {
+            console.log(`${_Xb._Gj}, ${_Wj}`);
             if ((_Xb._Gj < 4)) {
                 {
                     _Wj = 1;
