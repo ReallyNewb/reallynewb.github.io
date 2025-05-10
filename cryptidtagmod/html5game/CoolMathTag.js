@@ -50575,10 +50575,10 @@ function _E4(_Xb, _Yb) {
                 case 5:
                     _Sj = "Hot#Potato";
                     break;
-                case 6:
+                case 2:
                     _Sj = "Reverse#Tag";
                     break;
-                case 2:
+                case 6:
                     _Sj = "Horde#Tag";
                     break;
                 case 1:
