@@ -50562,13 +50562,13 @@ function _E4(_Xb, _Yb) {
     for (var __j = 0, _0k = ~~(4); __j < _0k; __j++) {
         {
             switch (_Uj) {
-                case 2:
+                case 5:
                     _Sj = "Hot#Potato";
                     break;
-                case 5:
+                case 6:
                     _Sj = "Reverse#Tag";
                     break;
-                case 6:
+                case 2:
                     _Sj = "Horde#Tag";
                     break;
                 case 1:
