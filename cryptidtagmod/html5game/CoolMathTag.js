@@ -50433,8 +50433,11 @@ function _A4(_Xb, _Yb) {
 }
 
 function _B4(_Xb, _Yb) {
+    var addBots = true;
+
     if (_Xb._Dj > 0.5) {
         {
+            var addBots = false;
             global._xh -= 1;
             _M5(_Xb, _Yb, 24);
         }
@@ -50460,7 +50463,18 @@ function _B4(_Xb, _Yb) {
             }
         }
     };
+
     global._xh = _xg(global._xh, _C4(_Xb, _Yb), _Xb._Hj);
+
+    // Infinite bot support.
+    if ((global._xh >= 4) && addBots == true) {
+        global._xh += 1;
+    } else {
+        if ((global._xh >= 0) && !addBots) {
+            global._xh -= 1;
+        }
+    }
+
     _Xb._Ij = "Add bots with >#Remove bots with <";
 }
 
